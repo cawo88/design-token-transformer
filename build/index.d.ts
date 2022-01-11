@@ -1,8 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Jan 2022 19:29:06 GMT
+ * Generated on Tue, 11 Jan 2022 20:01:13 GMT
  */
 
+export const ColorBlack : string;
+export const ColorWhite : string;
 export const FontText6xlRegular : { fontSize: number, textDecoration: string, fontFamily: string, fontWeight: number, fontStyle: string, fontStretch: string, letterSpacing: number, lineHeight: number, paragraphIndent: number, paragraphSpacing: number, textCase: string };
 export const FontText5xlRegular : { fontSize: number, textDecoration: string, fontFamily: string, fontWeight: number, fontStyle: string, fontStretch: string, letterSpacing: number, lineHeight: number, paragraphIndent: number, paragraphSpacing: number, textCase: string };
 export const FontText4xlRegular : { fontSize: number, textDecoration: string, fontFamily: string, fontWeight: number, fontStyle: string, fontStretch: string, letterSpacing: number, lineHeight: number, paragraphIndent: number, paragraphSpacing: number, textCase: string };

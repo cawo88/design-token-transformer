@@ -4,12 +4,14 @@
 //
 
 // Do not edit directly
-// Generated on Tue, 11 Jan 2022 19:29:06 GMT
+// Generated on Tue, 11 Jan 2022 20:01:13 GMT
 
 
 import UIKit
 
 public class StyleDictionary {
+    public static let colorBlack = UIColor(red: 0.000, green: 0.000, blue: 0.000, alpha: 1)
+    public static let colorWhite = UIColor(red: 1.000, green: 1.000, blue: 1.000, alpha: 1)
     public static let fontText2xlRegular = "[object Object]"
     public static let fontText3xlRegular = "[object Object]"
     public static let fontText4xlRegular = "[object Object]"
