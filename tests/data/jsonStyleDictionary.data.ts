@@ -1,1245 +1,1536 @@
 module.exports = {
-  "sizes": {
-    "32": {
-      "description": "32.72px spacer component",
-      "value": 32.72,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "40": {
-      "description": null,
-      "value": 40,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "60": {
-      "description": null,
-      "value": 60,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "80": {
-      "description": null,
-      "value": 80,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "plain token": {
-      "description": null,
-      "value": 200,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "token in frame": {
-      "description": null,
-      "value": 200,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "token in group": {
-      "description": null,
-      "value": 200,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "in variant 60": {
-      "description": null,
-      "value": 60,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "in variant 90": {
-      "description": null,
-      "value": 90,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "in variant 120": {
-      "description": null,
-      "value": 120,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "frame": {
-      "description": null,
-      "value": 32,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "rect": {
-      "description": null,
-      "value": 32,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    },
-    "shape in component": {
-      "description": "Should use 32px not 20 from inside shape",
-      "value": 32,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "size"
-        }
-      }
-    }
+  ColorBlack: "#000000",
+  ColorWhite: "#ffffff",
+  ColorGray50: "#fafafa",
+  ColorGray100: "#f4f4f5",
+  ColorGray200: "#e4e4e7",
+  ColorGray300: "#d4d4d8",
+  ColorGray400: "#a1a1aa",
+  ColorGray500: "#71717a",
+  ColorGray600: "#52525b",
+  ColorGray700: "#3f3f46",
+  ColorGray800: "#27272a",
+  ColorGray900: "#18181b",
+  ColorRed50: "#fef2f2",
+  ColorRed100: "#fee2e2",
+  ColorRed200: "#fecaca",
+  ColorRed300: "#fca5a5",
+  ColorRed400: "#f87171",
+  ColorRed500: "#ef4444",
+  ColorRed600: "#dc2626",
+  ColorRed700: "#b91c1c",
+  ColorRed800: "#991b1b",
+  ColorRed900: "#7f1d1d",
+  ColorOrange50: "#fff7ed",
+  ColorOrange100: "#ffedd5",
+  ColorOrange200: "#fed7aa",
+  ColorOrange300: "#fdba74",
+  ColorOrange400: "#fb923c",
+  ColorOrange500: "#f97316",
+  ColorOrange600: "#ea580c",
+  ColorOrange700: "#c2410c",
+  ColorOrange800: "#9a3412",
+  ColorOrange900: "#7c2d12",
+  ColorYellow50: "#fefce8",
+  ColorYellow100: "#fef9c3",
+  ColorYellow200: "#fef08a",
+  ColorYellow300: "#fde047",
+  ColorYellow400: "#facc15",
+  ColorYellow500: "#eab308",
+  ColorYellow600: "#ca8a04",
+  ColorYellow700: "#a16207",
+  ColorYellow800: "#854d0e",
+  ColorYellow900: "#713f12",
+  ColorGreen50: "#f0fdf4",
+  ColorGreen100: "#dcfce7",
+  ColorGreen200: "#bbf7d0",
+  ColorGreen300: "#86efac",
+  ColorGreen400: "#4ade80",
+  ColorGreen500: "#22c55e",
+  ColorGreen600: "#16a34a",
+  ColorGreen700: "#15803d",
+  ColorGreen800: "#166534",
+  ColorGreen900: "#14532d",
+  ColorTeal50: "#f0fdfa",
+  ColorTeal100: "#ccfbf1",
+  ColorTeal200: "#99f6e4",
+  ColorTeal300: "#5eead4",
+  ColorTeal400: "#2dd4bf",
+  ColorTeal500: "#14b8a6",
+  ColorTeal600: "#0d9488",
+  ColorTeal700: "#0f766e",
+  ColorTeal800: "#115e59",
+  ColorTeal900: "#134e4a",
+  ColorBlue50: "#eff6ff",
+  ColorBlue100: "#dbeafe",
+  ColorBlue200: "#bfdbfe",
+  ColorBlue300: "#93c5fd",
+  ColorBlue400: "#60a5fa",
+  ColorBlue500: "#3b82f6",
+  ColorBlue600: "#2563eb",
+  ColorBlue700: "#1d4ed8",
+  ColorBlue800: "#1e40af",
+  ColorBlue900: "#1e3a8a",
+  ColorIndigo50: "#eef2ff",
+  ColorIndigo100: "#e0e7ff",
+  ColorIndigo200: "#c7d2fe",
+  ColorIndigo300: "#a5b4fc",
+  ColorIndigo400: "#818cf8",
+  ColorIndigo500: "#6366f1",
+  ColorIndigo600: "#4f46e5",
+  ColorIndigo700: "#4338ca",
+  ColorIndigo800: "#3730a3",
+  ColorIndigo900: "#312e81",
+  ColorPurple50: "#faf5ff",
+  ColorPurple100: "#f3e8ff",
+  ColorPurple200: "#e9d5ff",
+  ColorPurple300: "#d8b4fe",
+  ColorPurple400: "#c084fc",
+  ColorPurple500: "#a855f7",
+  ColorPurple600: "#9333ea",
+  ColorPurple700: "#7e22ce",
+  ColorPurple800: "#6b21a8",
+  ColorPurple900: "#581c87",
+  ColorPink50: "#fdf2f8",
+  ColorPink100: "#fce7f3",
+  ColorPink200: "#fbcfe8",
+  ColorPink300: "#f9a8d4",
+  ColorPink400: "#f472b6",
+  ColorPink500: "#ec4899",
+  ColorPink600: "#db2777",
+  ColorPink700: "#be185d",
+  ColorPink800: "#9d174d",
+  ColorPink900: "#831843",
+  ColorRose50: "#fff1f2",
+  ColorRose100: "#ffe4e6",
+  ColorRose200: "#fecdd3",
+  ColorRose300: "#fda4af",
+  ColorRose400: "#fb7185",
+  ColorRose500: "#f43f5e",
+  ColorRose600: "#e11d48",
+  ColorRose700: "#be123c",
+  ColorRose800: "#9f1239",
+  ColorRose900: "#881337",
+  ColorFuchsia50: "#fdf4ff",
+  ColorFuchsia100: "#fae8ff",
+  ColorFuchsia200: "#f5d0fe",
+  ColorFuchsia300: "#f0abfc",
+  ColorFuchsia400: "#e879f9",
+  ColorFuchsia500: "#d946ef",
+  ColorFuchsia600: "#c026d3",
+  ColorFuchsia700: "#a21caf",
+  ColorFuchsia800: "#86198f",
+  ColorFuchsia900: "#701a75",
+  ColorViolet50: "#f5f3ff",
+  ColorViolet100: "#ede9fe",
+  ColorViolet200: "#ddd6fe",
+  ColorViolet300: "#c4b5fd",
+  ColorViolet400: "#a78bfa",
+  ColorViolet500: "#8b5cf6",
+  ColorViolet600: "#7c3aed",
+  ColorViolet700: "#6d28d9",
+  ColorViolet800: "#5b21b6",
+  ColorViolet900: "#4c1d95",
+  ColorLightblue50: "#f0f9ff",
+  ColorLightblue100: "#e0f2fe",
+  ColorLightblue200: "#bae6fd",
+  ColorLightblue300: "#7dd3fc",
+  ColorLightblue400: "#38bdf8",
+  ColorLightblue500: "#0ea5e9",
+  ColorLightblue600: "#0284c7",
+  ColorLightblue700: "#0369a1",
+  ColorLightblue800: "#075985",
+  ColorLightblue900: "#0c4a6e",
+  ColorCyan50: "#ecfeff",
+  ColorCyan100: "#cffafe",
+  ColorCyan200: "#a5f3fc",
+  ColorCyan300: "#67e8f9",
+  ColorCyan400: "#22d3ee",
+  ColorCyan500: "#06b6d4",
+  ColorCyan600: "#0891b2",
+  ColorCyan700: "#0e7490",
+  ColorCyan800: "#155e75",
+  ColorCyan900: "#164e63",
+  ColorEmerald50: "#ecfdf5",
+  ColorEmerald100: "#d1fae5",
+  ColorEmerald200: "#a7f3d0",
+  ColorEmerald300: "#6ee7b7",
+  ColorEmerald400: "#34d399",
+  ColorEmerald500: "#10b981",
+  ColorEmerald600: "#059669",
+  ColorEmerald700: "#047857",
+  ColorEmerald800: "#065f46",
+  ColorEmerald900: "#064e3b",
+  ColorLime50: "#f7fee7",
+  ColorLime100: "#ecfccb",
+  ColorLime200: "#d9f99d",
+  ColorLime300: "#bef264",
+  ColorLime400: "#a3e635",
+  ColorLime500: "#84cc16",
+  ColorLime600: "#65a30d",
+  ColorLime700: "#4d7c0f",
+  ColorLime800: "#3f6212",
+  ColorLime900: "#365314",
+  ColorAmber50: "#fffbeb",
+  ColorAmber100: "#fef3c7",
+  ColorAmber200: "#fde68a",
+  ColorAmber300: "#fcd34d",
+  ColorAmber400: "#fbbf24",
+  ColorAmber500: "#f59e0b",
+  ColorAmber600: "#d97706",
+  ColorAmber700: "#b45309",
+  ColorAmber800: "#92400e",
+  ColorAmber900: "#78350f",
+  ColorWarmgray50: "#fafaf9",
+  ColorWarmgray100: "#f5f5f4",
+  ColorWarmgray200: "#e7e5e4",
+  ColorWarmgray300: "#d6d3d1",
+  ColorWarmgray400: "#a8a29e",
+  ColorWarmgray500: "#78716c",
+  ColorWarmgray600: "#57534e",
+  ColorWarmgray700: "#44403c",
+  ColorWarmgray800: "#292524",
+  ColorWarmgray900: "#1c1917",
+  ColorTruegray50: "#fafafa",
+  ColorTruegray100: "#f5f5f5",
+  ColorTruegray200: "#e5e5e5",
+  ColorTruegray300: "#d4d4d4",
+  ColorTruegray400: "#a3a3a3",
+  ColorTruegray500: "#737373",
+  ColorTruegray600: "#525252",
+  ColorTruegray700: "#404040",
+  ColorTruegray800: "#262626",
+  ColorTruegray900: "#171717",
+  ColorCoolgray50: "#f9fafb",
+  ColorCoolgray100: "#f3f4f6",
+  ColorCoolgray200: "#e5e7eb",
+  ColorCoolgray300: "#d1d5db",
+  ColorCoolgray400: "#9ca3af",
+  ColorCoolgray500: "#6b7280",
+  ColorCoolgray600: "#4b5563",
+  ColorCoolgray700: "#374151",
+  ColorCoolgray800: "#1f2937",
+  ColorCoolgray900: "#111827",
+  ColorBluegray50: "#f8fafc",
+  ColorBluegray100: "#f1f5f9",
+  ColorBluegray200: "#e2e8f0",
+  ColorBluegray300: "#cbd5e1",
+  ColorBluegray400: "#94a3b8",
+  ColorBluegray500: "#64748b",
+  ColorBluegray600: "#475569",
+  ColorBluegray700: "#334155",
+  ColorBluegray800: "#1e293b",
+  ColorBluegray900: "#0f172a",
+  GridTemplatespacer0: {
+    pattern: "columns",
+    sectionSize: 100,
+    gutterSize: 0,
+    alignment: "min",
+    count: 1,
+    offset: 0,
   },
-  "breakpoints": {
-    "lg": {
-      "description": null,
-      "value": 1280,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "breakpoint"
-        }
-      }
-    },
-    "sm": {
-      "description": null,
-      "value": 768,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "breakpoint"
-        }
-      }
-    },
-    "md": {
-      "description": null,
-      "value": 1024,
-      "type": "dimension",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "breakpoint"
-        }
-      }
-    }
+  GridTemplatespacer1: {
+    pattern: "rows",
+    sectionSize: 100,
+    gutterSize: 0,
+    alignment: "min",
+    count: 1,
+    offset: 0,
   },
-  "spacing": {
-    "10": {
-      "description": null,
-      "type": "custom-spacing",
-      "value": {
-        "top": 10,
-        "bottom": 10,
-        "left": 10,
-        "right": 10
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "spacing"
-        }
-      }
-    },
-    "mixed": {
-      "description": null,
-      "type": "custom-spacing",
-      "value": {
-        "top": 10,
-        "bottom": 30,
-        "left": 20,
-        "right": 20
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "spacing"
-        }
-      }
-    },
-    "top": {
-      "description": null,
-      "type": "custom-spacing",
-      "value": {
-        "top": 10,
-        "bottom": 0,
-        "left": 0,
-        "right": 0
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "spacing"
-        }
-      }
-    }
+  GridTemplatespacer2: {
+    pattern: "columns",
+    sectionSize: 100,
+    gutterSize: 0,
+    alignment: "max",
+    count: 1,
+    offset: 0,
   },
-  "borders": {
-    "single": {
-      "description": null,
-      "type": "custom-stroke",
-      "value": {
-        "align": "inside",
-        "dashPattern": [],
-        "lineCap": "none",
-        "lineJoin": "miter",
-        "miterLimit": 4,
-        "weight": 5,
-        "color": "#000000ff"
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "border"
-        }
-      }
-    },
-    "dashed outside": {
-      "description": null,
-      "type": "custom-stroke",
-      "value": {
-        "align": "outside",
-        "dashPattern": [
-          5,
-          5,
-          3,
-          3
-        ],
-        "lineCap": "none",
-        "lineJoin": "miter",
-        "miterLimit": 4,
-        "weight": 5,
-        "color": "#000000ff"
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "border"
-        }
-      }
-    },
-    "single (style)": {
-      "description": null,
-      "type": "custom-stroke",
-      "value": {
-        "align": "inside",
-        "dashPattern": [],
-        "lineCap": "none",
-        "lineJoin": "miter",
-        "miterLimit": 4,
-        "weight": 5,
-        "color": "#044affff"
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "border"
-        }
-      }
-    },
-    "unsupported": {
-      "multiple borders": {
-        "description": null,
-        "type": "custom-stroke",
-        "value": {
-          "align": "inside",
-          "dashPattern": [
-            5,
-            10
-          ],
-          "lineCap": "none",
-          "lineJoin": "miter",
-          "miterLimit": 4,
-          "weight": 5,
-          "color": "#ffe600ff"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "exportKey": "border"
-          }
-        }
-      }
-    }
+  GridTemplatespacer3: {
+    pattern: "rows",
+    sectionSize: 100,
+    gutterSize: 0,
+    alignment: "max",
+    count: 1,
+    offset: 0,
   },
-  "radius": {
-    "5": {
-      "description": null,
-      "type": "custom-radius",
-      "value": {
-        "smoothing": 0,
-        "topLeft": 5,
-        "topRight": 5,
-        "bottomLeft": 5,
-        "bottomRight": 5
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "radius"
-        }
-      }
-    }
+  FontTextXsThin: {
+    fontSize: 12,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 18,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "radii": {
-    "smoothing": {
-      "description": null,
-      "type": "custom-radius",
-      "value": {
-        "smoothing": 0.75,
-        "topLeft": 10,
-        "topRight": 10,
-        "bottomLeft": 10,
-        "bottomRight": 10
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "radius"
-        }
-      }
-    },
-    "mixed": {
-      "description": null,
-      "type": "custom-radius",
-      "value": {
-        "smoothing": 0,
-        "topLeft": 5.5,
-        "topRight": 10,
-        "bottomLeft": 20,
-        "bottomRight": 15
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "radius"
-        }
-      }
-    }
+  FontTextXsLight: {
+    fontSize: 12,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 18,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "motion": {
-    "move in": {
-      "description": null,
-      "type": "custom-transition",
-      "value": {
-        "transitionType": "move_in",
-        "duration": 0.5,
-        "direction": "left",
-        "easingFunction": {
-          "x1": 0.41999998688697815,
-          "x2": 1,
-          "y1": 0,
-          "y2": 1
-        }
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "motion"
-        }
-      }
-    },
-    "dissolve": {
-      "description": null,
-      "type": "custom-transition",
-      "value": {
-        "transitionType": "dissolve",
-        "duration": 0.45,
-        "easingFunction": {
-          "x1": 0.6968395709991455,
-          "x2": 0.06683959811925888,
-          "y1": 0.052326660603284836,
-          "y2": 0.9323266744613647
-        }
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "motion"
-        }
-      }
-    },
-    "smart": {
-      "description": null,
-      "type": "custom-transition",
-      "value": {
-        "transitionType": "smart_animate",
-        "duration": 0.5,
-        "easingFunction": {
-          "x1": 0,
-          "x2": 1,
-          "y1": 0,
-          "y2": 1
-        }
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "motion"
-        }
-      }
-    },
-    "push": {
-      "description": null,
-      "type": "custom-transition",
-      "value": {
-        "transitionType": "push",
-        "duration": 0.5,
-        "direction": "left",
-        "easingFunction": {
-          "x1": 0.30000001192092896,
-          "x2": 0.699999988079071,
-          "y1": -0.05000000074505806,
-          "y2": -0.5
-        }
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "exportKey": "motion"
-        }
-      }
-    }
+  FontTextXsRegular: {
+    fontSize: 12,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 18,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "gradient": {
-    "gradient": {
-      "single with multiple color stops": {
-        "description": "Four color stops from yellow to red",
-        "type": "custom-gradient",
-        "value": {
-          "gradientType": "radial",
-          "rotation": 180,
-          "stops": [
-            {
-              "position": 0,
-              "color": "#ffb800ff"
-            },
-            {
-              "position": 0.34,
-              "color": "#ff8a00ff"
-            },
-            {
-              "position": 0.65,
-              "color": "#ff2e00ff"
-            },
-            {
-              "position": 1,
-              "color": "#ff0000ff"
-            }
-          ]
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:86b7ea8e4f88825c7ab660ae5f7cbbadfe6eb72f,",
-            "exportKey": "gradient"
-          }
-        }
-      },
-      "multiple": {
-        "0": {
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "linear",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#ffb800ff"
-              },
-              {
-                "position": 1,
-                "color": "#ffb800ff"
-              }
-            ]
-          }
-        },
-        "1": {
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "radial",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#ffffffff"
-              },
-              {
-                "position": 1,
-                "color": "#ffffffff"
-              }
-            ]
-          }
-        },
-        "2": {
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "angular",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#cf3030ff"
-              },
-              {
-                "position": 1,
-                "color": "#ffffffff"
-              }
-            ]
-          }
-        },
-        "3": {
-          "type": "custom-gradient",
-          "value": {
-            "gradientType": "diamond",
-            "rotation": 180,
-            "stops": [
-              {
-                "position": 0,
-                "color": "#4a4fccff"
-              },
-              {
-                "position": 1,
-                "color": "#ffffffff"
-              }
-            ]
-          }
-        },
-        "description": "",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:8ecc948b0d4487a6c702db3a947317e19be8fe7c,",
-            "exportKey": "gradient"
-          }
-        }
-      }
-    }
+  FontTextXsMedium: {
+    fontSize: 12,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 18,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "color": {
-    "colors": {
-      "multiple fills": {
-        "0": {
-          "type": "color",
-          "value": "#40ffbaff"
-        },
-        "1": {
-          "type": "color",
-          "value": "#0000001a"
-        },
-        "description": "",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:4a3029d323d8fb0c05dee39a983dafea20d7221e,",
-            "exportKey": "color"
-          }
-        }
-      },
-      "single blue": {
-        "description": "",
-        "type": "color",
-        "value": "#044affff",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:41c3b1bbb20c349db5198426c9f21eee91270703,",
-            "exportKey": "color"
-          }
-        }
-      },
-      "ref blue": {
-        "description": "Some other description",
-        "type": "color",
-        "value": "{color.colors.single blue.value}",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:a466a5c4f753617558885425bf0c42b7a53fcda4,",
-            "exportKey": "color",
-            "alias": "color.colors.single blue"
-          }
-        }
-      },
-      "special characters": {
-        "😅": {
-          "description": "Emoji",
-          "type": "color",
-          "value": "#40df50ff",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:0eca3633c52956ddb97940c7445007a90b937be1,",
-              "exportKey": "color"
-            }
-          }
-        },
-        "änderung": {
-          "description": "",
-          "type": "color",
-          "value": "#3456afff",
-          "extensions": {
-            "org.lukasoppermann.figmaDesignTokens": {
-              "styleId": "S:79e9a7afce7078dc29994d2791959ebf9f45efa5,",
-              "exportKey": "color"
-            }
-          }
-        }
-      }
-    },
-    "light": {
-      "background": {
-        "description": "",
-        "type": "color",
-        "value": "#ffffffff",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:75849ed2c7e89480495d954b1e060c72c4d7d25f,",
-            "exportKey": "color"
-          }
-        }
-      }
-    },
-    "dark": {
-      "background": {
-        "description": "",
-        "type": "color",
-        "value": "#000000ff",
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:c064a8971ca99f48f554bfc70a58deb50094f797,",
-            "exportKey": "color"
-          }
-        }
-      }
-    }
+  FontTextXsBold: {
+    fontSize: 12,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 18,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "grid": {
-    "multiple": {
-      "0": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "columns",
-          "sectionSize": 1,
-          "gutterSize": 20,
-          "alignment": "max",
-          "count": 7,
-          "offset": 3
-        }
-      },
-      "1": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "columns",
-          "sectionSize": 12,
-          "gutterSize": 20,
-          "alignment": "center",
-          "count": 6
-        }
-      },
-      "2": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "columns",
-          "gutterSize": 20,
-          "alignment": "stretch",
-          "count": 5,
-          "offset": 10
-        }
-      },
-      "3": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "columns",
-          "sectionSize": 34,
-          "gutterSize": 20,
-          "alignment": "min",
-          "count": 4,
-          "offset": 13
-        }
-      },
-      "4": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "rows",
-          "sectionSize": 8,
-          "gutterSize": 20,
-          "alignment": "max",
-          "count": 5,
-          "offset": 10
-        }
-      },
-      "5": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "rows",
-          "sectionSize": 8,
-          "gutterSize": 10,
-          "alignment": "center",
-          "count": 4
-        }
-      },
-      "6": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "rows",
-          "sectionSize": 8,
-          "gutterSize": 20,
-          "alignment": "min",
-          "count": 3,
-          "offset": 10
-        }
-      },
-      "7": {
-        "type": "custom-grid",
-        "value": {
-          "pattern": "grid",
-          "sectionSize": 8
-        }
-      },
-      "description": "Grid / multiple description text",
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:9431d2997261a6e36216749d0d5927407d95c07f,",
-          "exportKey": "grid"
-        }
-      }
-    },
-    "single": {
-      "description": null,
-      "type": "custom-grid",
-      "value": {
-        "pattern": "columns",
-        "sectionSize": 11,
-        "gutterSize": 20,
-        "alignment": "center",
-        "count": 5
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:8892f13476c0db3092e552a57f31a286640fc9d5,",
-          "exportKey": "grid"
-        }
-      }
-    }
+  FontTextSmThin: {
+    fontSize: 14,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 21,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "font": {
-    "body": {
-      "h3": {
-        "description": "Comment for text style",
-        "type": "custom-fontStyle",
-        "value": {
-          "fontSize": 20,
-          "textDecoration": "none",
-          "fontFamily": "Akzidenz-Grotesk Pro",
-          "fontWeight": 700,
-          "fontStyle": "normal",
-          "fontStretch": "condensed",
-          "letterSpacing": 0.4,
-          "lineHeight": 32,
-          "paragraphIndent": 5,
-          "paragraphSpacing": 8,
-          "textCase": "uppercase"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:a63c53704c21e63e557974232108ecd0ef16f3e2,",
-            "exportKey": "font"
-          }
-        }
-      },
-      "h4 strike through": {
-        "description": "With stylisitc options",
-        "type": "custom-fontStyle",
-        "value": {
-          "fontSize": 16,
-          "textDecoration": "line-through",
-          "fontFamily": "Roboto",
-          "fontWeight": 500,
-          "fontStyle": "italic",
-          "fontStretch": "normal",
-          "letterSpacing": 0,
-          "lineHeight": 19.2,
-          "paragraphIndent": 0,
-          "paragraphSpacing": 0,
-          "textCase": "none"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:c9389cf45c1db49fd46f961809ca352488397f7d,",
-            "exportKey": "font"
-          }
-        }
-      },
-      "italic": {
-        "type": "custom-fontStyle",
-        "value": {
-          "fontSize": 12,
-          "textDecoration": "none",
-          "fontFamily": "Roboto",
-          "fontWeight": 400,
-          "fontStyle": "italic",
-          "fontStretch": "normal",
-          "letterSpacing": 0,
-          "lineHeight": 14,
-          "paragraphIndent": 0,
-          "paragraphSpacing": 0,
-          "textCase": "none"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:9928779749ba4b821d81880d1e41ccefd2b76951,",
-            "exportKey": "font"
-          }
-        }
-      },
-      "extra bold condensed italic": {
-        "type": "custom-fontStyle",
-        "value": {
-          "fontSize": 12,
-          "textDecoration": "none",
-          "fontFamily": "Akzidenz-Grotesk Pro",
-          "fontWeight": 800,
-          "fontStyle": "italic",
-          "fontStretch": "condensed",
-          "letterSpacing": 0,
-          "lineHeight": 14.4,
-          "paragraphIndent": 0,
-          "paragraphSpacing": 0,
-          "textCase": "none"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:2eab5c798e7b6de010927c757b69f3d605097439,",
-            "exportKey": "font"
-          }
-        }
-      },
-      "medium extended italic": {
-        "type": "custom-fontStyle",
-        "value": {
-          "fontSize": 20,
-          "textDecoration": "none",
-          "fontFamily": "Akzidenz-Grotesk Pro",
-          "fontWeight": 500,
-          "fontStyle": "italic",
-          "fontStretch": "expanded",
-          "letterSpacing": 0,
-          "lineHeight": 24,
-          "paragraphIndent": 0,
-          "paragraphSpacing": 0,
-          "textCase": "none"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:65286eb024a509b4cfaef329affbae773fb73a5e,",
-            "exportKey": "font"
-          }
-        }
-      },
-      "super": {
-        "type": "custom-fontStyle",
-        "value": {
-          "fontSize": 22,
-          "textDecoration": "none",
-          "fontFamily": "Akzidenz-Grotesk Pro",
-          "fontWeight": 900,
-          "fontStyle": "normal",
-          "fontStretch": "normal",
-          "letterSpacing": 0,
-          "lineHeight": 26.4,
-          "paragraphIndent": 0,
-          "paragraphSpacing": 0,
-          "textCase": "none"
-        },
-        "extensions": {
-          "org.lukasoppermann.figmaDesignTokens": {
-            "styleId": "S:32eb85f3238ccaa59c15d6de911c57afa96ba58a,",
-            "exportKey": "font"
-          }
-        }
-      }
-    }
+  FontTextSmLight: {
+    fontSize: 14,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 21,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "effect": {
-    "drop shadow (single)": {
-      "description": "Drop shadow single description",
-      "type": "custom-shadow",
-      "value": {
-        "shadowType": "dropShadow",
-        "radius": 4,
-        "color": "#00000040",
-        "offsetX": 0,
-        "offsetY": 4,
-        "spread": 0
-      },
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:cef90a92a0f669207251e8e2da214b6393abc44c,",
-          "exportKey": "effect"
-        }
-      }
-    },
-    "inner shadow (multiple)": {
-      "0": {
-        "type": "custom-shadow",
-        "value": {
-          "shadowType": "innerShadow",
-          "radius": 4,
-          "color": "#00000040",
-          "offsetX": 0,
-          "offsetY": 4,
-          "spread": 0
-        }
-      },
-      "1": {
-        "type": "custom-shadow",
-        "value": {
-          "shadowType": "innerShadow",
-          "radius": 1,
-          "color": "#000000ff",
-          "offsetX": 10,
-          "offsetY": 100,
-          "spread": 0.5
-        }
-      },
-      "2": {
-        "type": "custom-shadow",
-        "value": {
-          "shadowType": "innerShadow",
-          "radius": 3,
-          "color": "#00000040",
-          "offsetX": -4,
-          "offsetY": 2,
-          "spread": 11
-        }
-      },
-      "description": null,
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:23c7adc38dc6cf8e157c05f8885409d3e1cf4de2,",
-          "exportKey": "effect"
-        }
-      }
-    },
-    "layer blur": {
-      "description": null,
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:8a600422767982ef9e712451bb9f60a9d2c0e04f,",
-          "exportKey": "effect"
-        }
-      }
-    },
-    "background blur": {
-      "description": null,
-      "extensions": {
-        "org.lukasoppermann.figmaDesignTokens": {
-          "styleId": "S:d9246d6c5234e471b17585324379ec19abcf03f4,",
-          "exportKey": "effect"
-        }
-      }
-    }
+  FontTextSmRegular: {
+    fontSize: 14,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 21,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
   },
-  "typography": {
-    "body": {
-      "h3": {
-        "description": "Comment for text style",
-        "fontSize": {
-          "type": "dimension",
-          "value": 20
-        },
-        "textDecoration": {
-          "type": "string",
-          "value": "none"
-        },
-        "fontFamily": {
-          "type": "string",
-          "value": "Akzidenz-Grotesk Pro"
-        },
-        "fontWeight": {
-          "type": "number",
-          "value": 700
-        },
-        "fontStyle": {
-          "type": "string",
-          "value": "normal"
-        },
-        "fontStretch": {
-          "type": "string",
-          "value": "condensed"
-        },
-        "letterSpacing": {
-          "type": "dimension",
-          "value": 0.4
-        },
-        "lineHeight": {
-          "type": "dimension",
-          "value": 32
-        },
-        "paragraphIndent": {
-          "type": "dimension",
-          "value": 5
-        },
-        "paragraphSpacing": {
-          "type": "dimension",
-          "value": 8
-        },
-        "textCase": {
-          "type": "string",
-          "value": "uppercase"
-        }
-      },
-      "h4 strike through": {
-        "description": "With stylisitc options",
-        "fontSize": {
-          "type": "dimension",
-          "value": 16
-        },
-        "textDecoration": {
-          "type": "string",
-          "value": "line-through"
-        },
-        "fontFamily": {
-          "type": "string",
-          "value": "Roboto"
-        },
-        "fontWeight": {
-          "type": "number",
-          "value": 500
-        },
-        "fontStyle": {
-          "type": "string",
-          "value": "italic"
-        },
-        "fontStretch": {
-          "type": "string",
-          "value": "normal"
-        },
-        "letterSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "lineHeight": {
-          "type": "dimension",
-          "value": 19.2
-        },
-        "paragraphIndent": {
-          "type": "dimension",
-          "value": 0
-        },
-        "paragraphSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "textCase": {
-          "type": "string",
-          "value": "none"
-        }
-      },
-      "italic": {
-        "fontSize": {
-          "type": "dimension",
-          "value": 12
-        },
-        "textDecoration": {
-          "type": "string",
-          "value": "none"
-        },
-        "fontFamily": {
-          "type": "string",
-          "value": "Roboto"
-        },
-        "fontWeight": {
-          "type": "number",
-          "value": 400
-        },
-        "fontStyle": {
-          "type": "string",
-          "value": "italic"
-        },
-        "fontStretch": {
-          "type": "string",
-          "value": "normal"
-        },
-        "letterSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "lineHeight": {
-          "type": "dimension",
-          "value": 14
-        },
-        "paragraphIndent": {
-          "type": "dimension",
-          "value": 0
-        },
-        "paragraphSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "textCase": {
-          "type": "string",
-          "value": "none"
-        }
-      },
-      "extra bold condensed italic": {
-        "fontSize": {
-          "type": "dimension",
-          "value": 12
-        },
-        "textDecoration": {
-          "type": "string",
-          "value": "none"
-        },
-        "fontFamily": {
-          "type": "string",
-          "value": "Akzidenz-Grotesk Pro"
-        },
-        "fontWeight": {
-          "type": "number",
-          "value": 800
-        },
-        "fontStyle": {
-          "type": "string",
-          "value": "italic"
-        },
-        "fontStretch": {
-          "type": "string",
-          "value": "condensed"
-        },
-        "letterSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "lineHeight": {
-          "type": "dimension",
-          "value": 14.4
-        },
-        "paragraphIndent": {
-          "type": "dimension",
-          "value": 0
-        },
-        "paragraphSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "textCase": {
-          "type": "string",
-          "value": "none"
-        }
-      },
-      "medium extended italic": {
-        "fontSize": {
-          "type": "dimension",
-          "value": 20
-        },
-        "textDecoration": {
-          "type": "string",
-          "value": "none"
-        },
-        "fontFamily": {
-          "type": "string",
-          "value": "Akzidenz-Grotesk Pro"
-        },
-        "fontWeight": {
-          "type": "number",
-          "value": 500
-        },
-        "fontStyle": {
-          "type": "string",
-          "value": "italic"
-        },
-        "fontStretch": {
-          "type": "string",
-          "value": "expanded"
-        },
-        "letterSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "lineHeight": {
-          "type": "dimension",
-          "value": 24
-        },
-        "paragraphIndent": {
-          "type": "dimension",
-          "value": 0
-        },
-        "paragraphSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "textCase": {
-          "type": "string",
-          "value": "none"
-        }
-      },
-      "super": {
-        "fontSize": {
-          "type": "dimension",
-          "value": 22
-        },
-        "textDecoration": {
-          "type": "string",
-          "value": "none"
-        },
-        "fontFamily": {
-          "type": "string",
-          "value": "Akzidenz-Grotesk Pro"
-        },
-        "fontWeight": {
-          "type": "number",
-          "value": 900
-        },
-        "fontStyle": {
-          "type": "string",
-          "value": "normal"
-        },
-        "fontStretch": {
-          "type": "string",
-          "value": "normal"
-        },
-        "letterSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "lineHeight": {
-          "type": "dimension",
-          "value": 26.4
-        },
-        "paragraphIndent": {
-          "type": "dimension",
-          "value": 0
-        },
-        "paragraphSpacing": {
-          "type": "dimension",
-          "value": 0
-        },
-        "textCase": {
-          "type": "string",
-          "value": "none"
-        }
-      }
-    }
-  }
-}
+  FontTextSmMedium: {
+    fontSize: 14,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 21,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextSmBold: {
+    fontSize: 14,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 21,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextBaseThin: {
+    fontSize: 16,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 24,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextBaseLight: {
+    fontSize: 16,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 24,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextBaseRegular: {
+    fontSize: 16,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 24,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextBaseMedium: {
+    fontSize: 16,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 24,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextBaseBold: {
+    fontSize: 16,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 24,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextLgThin: {
+    fontSize: 18,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 27,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextLgLight: {
+    fontSize: 18,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 27,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextLgRegular: {
+    fontSize: 18,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 27,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextLgMedium: {
+    fontSize: 18,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 27,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextLgBold: {
+    fontSize: 18,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 27,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextXlThin: {
+    fontSize: 20,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 30,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextXlLight: {
+    fontSize: 20,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 30,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextXlRegular: {
+    fontSize: 20,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 30,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextXlMedium: {
+    fontSize: 20,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 30,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontTextXlBold: {
+    fontSize: 20,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 30,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText2xlThin: {
+    fontSize: 24,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 36,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText2xlLight: {
+    fontSize: 24,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 36,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText2xlRegular: {
+    fontSize: 24,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 36,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText2xlMedium: {
+    fontSize: 24,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 36,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText2xlBold: {
+    fontSize: 24,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 36,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText3xlThin: {
+    fontSize: 30,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 45,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText3xlLight: {
+    fontSize: 30,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 45,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText3xlRegular: {
+    fontSize: 30,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 45,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText3xlMedium: {
+    fontSize: 30,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 45,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText3xlBold: {
+    fontSize: 30,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 45,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText4xlThin: {
+    fontSize: 36,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 54,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText4xlLight: {
+    fontSize: 36,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 54,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText4xlRegular: {
+    fontSize: 36,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 54,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText4xlMedium: {
+    fontSize: 36,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 54,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText4xlBold: {
+    fontSize: 36,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 54,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText5xlThin: {
+    fontSize: 48,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 72,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText5xlLight: {
+    fontSize: 48,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 72,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText5xlRegular: {
+    fontSize: 48,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 72,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText5xlMedium: {
+    fontSize: 48,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 72,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText5xlBold: {
+    fontSize: 48,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 72,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText6xlThin: {
+    fontSize: 64,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 100,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 96,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText6xlLight: {
+    fontSize: 64,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 300,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 96,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText6xlRegular: {
+    fontSize: 64,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 400,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 96,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText6xlMedium: {
+    fontSize: 64,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 500,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 96,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  FontText6xlBold: {
+    fontSize: 64,
+    textDecoration: "none",
+    fontFamily: "Helvetica Neue",
+    fontWeight: 700,
+    fontStyle: "normal",
+    fontStretch: "normal",
+    letterSpacing: 0,
+    lineHeight: 96,
+    paragraphIndent: 0,
+    paragraphSpacing: 0,
+    textCase: "none",
+  },
+  EffectShadowBase0: {
+    shadowType: "dropShadow",
+    radius: 3,
+    color: "#0000001a",
+    offsetX: 0,
+    offsetY: 1,
+    spread: 0,
+  },
+  EffectShadowBase1: {
+    shadowType: "dropShadow",
+    radius: 2,
+    color: "#0000000f",
+    offsetX: 0,
+    offsetY: 1,
+    spread: 0,
+  },
+  EffectShadowLg0: {
+    shadowType: "dropShadow",
+    radius: 6,
+    color: "#0000000d",
+    offsetX: 0,
+    offsetY: 4,
+    spread: 0,
+  },
+  EffectShadowLg1: {
+    shadowType: "dropShadow",
+    radius: 15,
+    color: "#0000001a",
+    offsetX: 0,
+    offsetY: 10,
+    spread: 0,
+  },
+  EffectShadowMd0: {
+    shadowType: "dropShadow",
+    radius: 6,
+    color: "#0000001a",
+    offsetX: 0,
+    offsetY: 4,
+    spread: 0,
+  },
+  EffectShadowMd1: {
+    shadowType: "dropShadow",
+    radius: 4,
+    color: "#0000000f",
+    offsetX: 0,
+    offsetY: 2,
+    spread: 0,
+  },
+  EffectShadowXl0: {
+    shadowType: "dropShadow",
+    radius: 10,
+    color: "#0000000a",
+    offsetX: 0,
+    offsetY: 10,
+    spread: 0,
+  },
+  EffectShadowXl1: {
+    shadowType: "dropShadow",
+    radius: 25,
+    color: "#0000001a",
+    offsetX: 0,
+    offsetY: 20,
+    spread: 0,
+  },
+  EffectShadow2xl: {
+    shadowType: "dropShadow",
+    radius: 50,
+    color: "#00000040",
+    offsetX: 0,
+    offsetY: 25,
+    spread: 0,
+  },
+  EffectShadowInner: {
+    shadowType: "innerShadow",
+    radius: 4,
+    color: "#0000000f",
+    offsetX: 0,
+    offsetY: 2,
+    spread: 0,
+  },
+  TypographyTextXsThinFontSize: 12,
+  TypographyTextXsThinTextDecoration: "none",
+  TypographyTextXsThinFontFamily: "Helvetica Neue",
+  TypographyTextXsThinFontWeight: 100,
+  TypographyTextXsThinFontStyle: "normal",
+  TypographyTextXsThinFontStretch: "normal",
+  TypographyTextXsThinLetterSpacing: 0,
+  TypographyTextXsThinLineHeight: 18,
+  TypographyTextXsThinParagraphIndent: 0,
+  TypographyTextXsThinParagraphSpacing: 0,
+  TypographyTextXsThinTextCase: "none",
+  TypographyTextXsLightFontSize: 12,
+  TypographyTextXsLightTextDecoration: "none",
+  TypographyTextXsLightFontFamily: "Helvetica Neue",
+  TypographyTextXsLightFontWeight: 300,
+  TypographyTextXsLightFontStyle: "normal",
+  TypographyTextXsLightFontStretch: "normal",
+  TypographyTextXsLightLetterSpacing: 0,
+  TypographyTextXsLightLineHeight: 18,
+  TypographyTextXsLightParagraphIndent: 0,
+  TypographyTextXsLightParagraphSpacing: 0,
+  TypographyTextXsLightTextCase: "none",
+  TypographyTextXsRegularFontSize: 12,
+  TypographyTextXsRegularTextDecoration: "none",
+  TypographyTextXsRegularFontFamily: "Helvetica Neue",
+  TypographyTextXsRegularFontWeight: 400,
+  TypographyTextXsRegularFontStyle: "normal",
+  TypographyTextXsRegularFontStretch: "normal",
+  TypographyTextXsRegularLetterSpacing: 0,
+  TypographyTextXsRegularLineHeight: 18,
+  TypographyTextXsRegularParagraphIndent: 0,
+  TypographyTextXsRegularParagraphSpacing: 0,
+  TypographyTextXsRegularTextCase: "none",
+  TypographyTextXsMediumFontSize: 12,
+  TypographyTextXsMediumTextDecoration: "none",
+  TypographyTextXsMediumFontFamily: "Helvetica Neue",
+  TypographyTextXsMediumFontWeight: 500,
+  TypographyTextXsMediumFontStyle: "normal",
+  TypographyTextXsMediumFontStretch: "normal",
+  TypographyTextXsMediumLetterSpacing: 0,
+  TypographyTextXsMediumLineHeight: 18,
+  TypographyTextXsMediumParagraphIndent: 0,
+  TypographyTextXsMediumParagraphSpacing: 0,
+  TypographyTextXsMediumTextCase: "none",
+  TypographyTextXsBoldFontSize: 12,
+  TypographyTextXsBoldTextDecoration: "none",
+  TypographyTextXsBoldFontFamily: "Helvetica Neue",
+  TypographyTextXsBoldFontWeight: 700,
+  TypographyTextXsBoldFontStyle: "normal",
+  TypographyTextXsBoldFontStretch: "normal",
+  TypographyTextXsBoldLetterSpacing: 0,
+  TypographyTextXsBoldLineHeight: 18,
+  TypographyTextXsBoldParagraphIndent: 0,
+  TypographyTextXsBoldParagraphSpacing: 0,
+  TypographyTextXsBoldTextCase: "none",
+  TypographyTextSmThinFontSize: 14,
+  TypographyTextSmThinTextDecoration: "none",
+  TypographyTextSmThinFontFamily: "Helvetica Neue",
+  TypographyTextSmThinFontWeight: 100,
+  TypographyTextSmThinFontStyle: "normal",
+  TypographyTextSmThinFontStretch: "normal",
+  TypographyTextSmThinLetterSpacing: 0,
+  TypographyTextSmThinLineHeight: 21,
+  TypographyTextSmThinParagraphIndent: 0,
+  TypographyTextSmThinParagraphSpacing: 0,
+  TypographyTextSmThinTextCase: "none",
+  TypographyTextSmLightFontSize: 14,
+  TypographyTextSmLightTextDecoration: "none",
+  TypographyTextSmLightFontFamily: "Helvetica Neue",
+  TypographyTextSmLightFontWeight: 300,
+  TypographyTextSmLightFontStyle: "normal",
+  TypographyTextSmLightFontStretch: "normal",
+  TypographyTextSmLightLetterSpacing: 0,
+  TypographyTextSmLightLineHeight: 21,
+  TypographyTextSmLightParagraphIndent: 0,
+  TypographyTextSmLightParagraphSpacing: 0,
+  TypographyTextSmLightTextCase: "none",
+  TypographyTextSmRegularFontSize: 14,
+  TypographyTextSmRegularTextDecoration: "none",
+  TypographyTextSmRegularFontFamily: "Helvetica Neue",
+  TypographyTextSmRegularFontWeight: 400,
+  TypographyTextSmRegularFontStyle: "normal",
+  TypographyTextSmRegularFontStretch: "normal",
+  TypographyTextSmRegularLetterSpacing: 0,
+  TypographyTextSmRegularLineHeight: 21,
+  TypographyTextSmRegularParagraphIndent: 0,
+  TypographyTextSmRegularParagraphSpacing: 0,
+  TypographyTextSmRegularTextCase: "none",
+  TypographyTextSmMediumFontSize: 14,
+  TypographyTextSmMediumTextDecoration: "none",
+  TypographyTextSmMediumFontFamily: "Helvetica Neue",
+  TypographyTextSmMediumFontWeight: 500,
+  TypographyTextSmMediumFontStyle: "normal",
+  TypographyTextSmMediumFontStretch: "normal",
+  TypographyTextSmMediumLetterSpacing: 0,
+  TypographyTextSmMediumLineHeight: 21,
+  TypographyTextSmMediumParagraphIndent: 0,
+  TypographyTextSmMediumParagraphSpacing: 0,
+  TypographyTextSmMediumTextCase: "none",
+  TypographyTextSmBoldFontSize: 14,
+  TypographyTextSmBoldTextDecoration: "none",
+  TypographyTextSmBoldFontFamily: "Helvetica Neue",
+  TypographyTextSmBoldFontWeight: 700,
+  TypographyTextSmBoldFontStyle: "normal",
+  TypographyTextSmBoldFontStretch: "normal",
+  TypographyTextSmBoldLetterSpacing: 0,
+  TypographyTextSmBoldLineHeight: 21,
+  TypographyTextSmBoldParagraphIndent: 0,
+  TypographyTextSmBoldParagraphSpacing: 0,
+  TypographyTextSmBoldTextCase: "none",
+  TypographyTextBaseThinFontSize: 16,
+  TypographyTextBaseThinTextDecoration: "none",
+  TypographyTextBaseThinFontFamily: "Helvetica Neue",
+  TypographyTextBaseThinFontWeight: 100,
+  TypographyTextBaseThinFontStyle: "normal",
+  TypographyTextBaseThinFontStretch: "normal",
+  TypographyTextBaseThinLetterSpacing: 0,
+  TypographyTextBaseThinLineHeight: 24,
+  TypographyTextBaseThinParagraphIndent: 0,
+  TypographyTextBaseThinParagraphSpacing: 0,
+  TypographyTextBaseThinTextCase: "none",
+  TypographyTextBaseLightFontSize: 16,
+  TypographyTextBaseLightTextDecoration: "none",
+  TypographyTextBaseLightFontFamily: "Helvetica Neue",
+  TypographyTextBaseLightFontWeight: 300,
+  TypographyTextBaseLightFontStyle: "normal",
+  TypographyTextBaseLightFontStretch: "normal",
+  TypographyTextBaseLightLetterSpacing: 0,
+  TypographyTextBaseLightLineHeight: 24,
+  TypographyTextBaseLightParagraphIndent: 0,
+  TypographyTextBaseLightParagraphSpacing: 0,
+  TypographyTextBaseLightTextCase: "none",
+  TypographyTextBaseRegularFontSize: 16,
+  TypographyTextBaseRegularTextDecoration: "none",
+  TypographyTextBaseRegularFontFamily: "Helvetica Neue",
+  TypographyTextBaseRegularFontWeight: 400,
+  TypographyTextBaseRegularFontStyle: "normal",
+  TypographyTextBaseRegularFontStretch: "normal",
+  TypographyTextBaseRegularLetterSpacing: 0,
+  TypographyTextBaseRegularLineHeight: 24,
+  TypographyTextBaseRegularParagraphIndent: 0,
+  TypographyTextBaseRegularParagraphSpacing: 0,
+  TypographyTextBaseRegularTextCase: "none",
+  TypographyTextBaseMediumFontSize: 16,
+  TypographyTextBaseMediumTextDecoration: "none",
+  TypographyTextBaseMediumFontFamily: "Helvetica Neue",
+  TypographyTextBaseMediumFontWeight: 500,
+  TypographyTextBaseMediumFontStyle: "normal",
+  TypographyTextBaseMediumFontStretch: "normal",
+  TypographyTextBaseMediumLetterSpacing: 0,
+  TypographyTextBaseMediumLineHeight: 24,
+  TypographyTextBaseMediumParagraphIndent: 0,
+  TypographyTextBaseMediumParagraphSpacing: 0,
+  TypographyTextBaseMediumTextCase: "none",
+  TypographyTextBaseBoldFontSize: 16,
+  TypographyTextBaseBoldTextDecoration: "none",
+  TypographyTextBaseBoldFontFamily: "Helvetica Neue",
+  TypographyTextBaseBoldFontWeight: 700,
+  TypographyTextBaseBoldFontStyle: "normal",
+  TypographyTextBaseBoldFontStretch: "normal",
+  TypographyTextBaseBoldLetterSpacing: 0,
+  TypographyTextBaseBoldLineHeight: 24,
+  TypographyTextBaseBoldParagraphIndent: 0,
+  TypographyTextBaseBoldParagraphSpacing: 0,
+  TypographyTextBaseBoldTextCase: "none",
+  TypographyTextLgThinFontSize: 18,
+  TypographyTextLgThinTextDecoration: "none",
+  TypographyTextLgThinFontFamily: "Helvetica Neue",
+  TypographyTextLgThinFontWeight: 100,
+  TypographyTextLgThinFontStyle: "normal",
+  TypographyTextLgThinFontStretch: "normal",
+  TypographyTextLgThinLetterSpacing: 0,
+  TypographyTextLgThinLineHeight: 27,
+  TypographyTextLgThinParagraphIndent: 0,
+  TypographyTextLgThinParagraphSpacing: 0,
+  TypographyTextLgThinTextCase: "none",
+  TypographyTextLgLightFontSize: 18,
+  TypographyTextLgLightTextDecoration: "none",
+  TypographyTextLgLightFontFamily: "Helvetica Neue",
+  TypographyTextLgLightFontWeight: 300,
+  TypographyTextLgLightFontStyle: "normal",
+  TypographyTextLgLightFontStretch: "normal",
+  TypographyTextLgLightLetterSpacing: 0,
+  TypographyTextLgLightLineHeight: 27,
+  TypographyTextLgLightParagraphIndent: 0,
+  TypographyTextLgLightParagraphSpacing: 0,
+  TypographyTextLgLightTextCase: "none",
+  TypographyTextLgRegularFontSize: 18,
+  TypographyTextLgRegularTextDecoration: "none",
+  TypographyTextLgRegularFontFamily: "Helvetica Neue",
+  TypographyTextLgRegularFontWeight: 400,
+  TypographyTextLgRegularFontStyle: "normal",
+  TypographyTextLgRegularFontStretch: "normal",
+  TypographyTextLgRegularLetterSpacing: 0,
+  TypographyTextLgRegularLineHeight: 27,
+  TypographyTextLgRegularParagraphIndent: 0,
+  TypographyTextLgRegularParagraphSpacing: 0,
+  TypographyTextLgRegularTextCase: "none",
+  TypographyTextLgMediumFontSize: 18,
+  TypographyTextLgMediumTextDecoration: "none",
+  TypographyTextLgMediumFontFamily: "Helvetica Neue",
+  TypographyTextLgMediumFontWeight: 500,
+  TypographyTextLgMediumFontStyle: "normal",
+  TypographyTextLgMediumFontStretch: "normal",
+  TypographyTextLgMediumLetterSpacing: 0,
+  TypographyTextLgMediumLineHeight: 27,
+  TypographyTextLgMediumParagraphIndent: 0,
+  TypographyTextLgMediumParagraphSpacing: 0,
+  TypographyTextLgMediumTextCase: "none",
+  TypographyTextLgBoldFontSize: 18,
+  TypographyTextLgBoldTextDecoration: "none",
+  TypographyTextLgBoldFontFamily: "Helvetica Neue",
+  TypographyTextLgBoldFontWeight: 700,
+  TypographyTextLgBoldFontStyle: "normal",
+  TypographyTextLgBoldFontStretch: "normal",
+  TypographyTextLgBoldLetterSpacing: 0,
+  TypographyTextLgBoldLineHeight: 27,
+  TypographyTextLgBoldParagraphIndent: 0,
+  TypographyTextLgBoldParagraphSpacing: 0,
+  TypographyTextLgBoldTextCase: "none",
+  TypographyTextXlThinFontSize: 20,
+  TypographyTextXlThinTextDecoration: "none",
+  TypographyTextXlThinFontFamily: "Helvetica Neue",
+  TypographyTextXlThinFontWeight: 100,
+  TypographyTextXlThinFontStyle: "normal",
+  TypographyTextXlThinFontStretch: "normal",
+  TypographyTextXlThinLetterSpacing: 0,
+  TypographyTextXlThinLineHeight: 30,
+  TypographyTextXlThinParagraphIndent: 0,
+  TypographyTextXlThinParagraphSpacing: 0,
+  TypographyTextXlThinTextCase: "none",
+  TypographyTextXlLightFontSize: 20,
+  TypographyTextXlLightTextDecoration: "none",
+  TypographyTextXlLightFontFamily: "Helvetica Neue",
+  TypographyTextXlLightFontWeight: 300,
+  TypographyTextXlLightFontStyle: "normal",
+  TypographyTextXlLightFontStretch: "normal",
+  TypographyTextXlLightLetterSpacing: 0,
+  TypographyTextXlLightLineHeight: 30,
+  TypographyTextXlLightParagraphIndent: 0,
+  TypographyTextXlLightParagraphSpacing: 0,
+  TypographyTextXlLightTextCase: "none",
+  TypographyTextXlRegularFontSize: 20,
+  TypographyTextXlRegularTextDecoration: "none",
+  TypographyTextXlRegularFontFamily: "Helvetica Neue",
+  TypographyTextXlRegularFontWeight: 400,
+  TypographyTextXlRegularFontStyle: "normal",
+  TypographyTextXlRegularFontStretch: "normal",
+  TypographyTextXlRegularLetterSpacing: 0,
+  TypographyTextXlRegularLineHeight: 30,
+  TypographyTextXlRegularParagraphIndent: 0,
+  TypographyTextXlRegularParagraphSpacing: 0,
+  TypographyTextXlRegularTextCase: "none",
+  TypographyTextXlMediumFontSize: 20,
+  TypographyTextXlMediumTextDecoration: "none",
+  TypographyTextXlMediumFontFamily: "Helvetica Neue",
+  TypographyTextXlMediumFontWeight: 500,
+  TypographyTextXlMediumFontStyle: "normal",
+  TypographyTextXlMediumFontStretch: "normal",
+  TypographyTextXlMediumLetterSpacing: 0,
+  TypographyTextXlMediumLineHeight: 30,
+  TypographyTextXlMediumParagraphIndent: 0,
+  TypographyTextXlMediumParagraphSpacing: 0,
+  TypographyTextXlMediumTextCase: "none",
+  TypographyTextXlBoldFontSize: 20,
+  TypographyTextXlBoldTextDecoration: "none",
+  TypographyTextXlBoldFontFamily: "Helvetica Neue",
+  TypographyTextXlBoldFontWeight: 700,
+  TypographyTextXlBoldFontStyle: "normal",
+  TypographyTextXlBoldFontStretch: "normal",
+  TypographyTextXlBoldLetterSpacing: 0,
+  TypographyTextXlBoldLineHeight: 30,
+  TypographyTextXlBoldParagraphIndent: 0,
+  TypographyTextXlBoldParagraphSpacing: 0,
+  TypographyTextXlBoldTextCase: "none",
+  TypographyText2xlThinFontSize: 24,
+  TypographyText2xlThinTextDecoration: "none",
+  TypographyText2xlThinFontFamily: "Helvetica Neue",
+  TypographyText2xlThinFontWeight: 100,
+  TypographyText2xlThinFontStyle: "normal",
+  TypographyText2xlThinFontStretch: "normal",
+  TypographyText2xlThinLetterSpacing: 0,
+  TypographyText2xlThinLineHeight: 36,
+  TypographyText2xlThinParagraphIndent: 0,
+  TypographyText2xlThinParagraphSpacing: 0,
+  TypographyText2xlThinTextCase: "none",
+  TypographyText2xlLightFontSize: 24,
+  TypographyText2xlLightTextDecoration: "none",
+  TypographyText2xlLightFontFamily: "Helvetica Neue",
+  TypographyText2xlLightFontWeight: 300,
+  TypographyText2xlLightFontStyle: "normal",
+  TypographyText2xlLightFontStretch: "normal",
+  TypographyText2xlLightLetterSpacing: 0,
+  TypographyText2xlLightLineHeight: 36,
+  TypographyText2xlLightParagraphIndent: 0,
+  TypographyText2xlLightParagraphSpacing: 0,
+  TypographyText2xlLightTextCase: "none",
+  TypographyText2xlRegularFontSize: 24,
+  TypographyText2xlRegularTextDecoration: "none",
+  TypographyText2xlRegularFontFamily: "Helvetica Neue",
+  TypographyText2xlRegularFontWeight: 400,
+  TypographyText2xlRegularFontStyle: "normal",
+  TypographyText2xlRegularFontStretch: "normal",
+  TypographyText2xlRegularLetterSpacing: 0,
+  TypographyText2xlRegularLineHeight: 36,
+  TypographyText2xlRegularParagraphIndent: 0,
+  TypographyText2xlRegularParagraphSpacing: 0,
+  TypographyText2xlRegularTextCase: "none",
+  TypographyText2xlMediumFontSize: 24,
+  TypographyText2xlMediumTextDecoration: "none",
+  TypographyText2xlMediumFontFamily: "Helvetica Neue",
+  TypographyText2xlMediumFontWeight: 500,
+  TypographyText2xlMediumFontStyle: "normal",
+  TypographyText2xlMediumFontStretch: "normal",
+  TypographyText2xlMediumLetterSpacing: 0,
+  TypographyText2xlMediumLineHeight: 36,
+  TypographyText2xlMediumParagraphIndent: 0,
+  TypographyText2xlMediumParagraphSpacing: 0,
+  TypographyText2xlMediumTextCase: "none",
+  TypographyText2xlBoldFontSize: 24,
+  TypographyText2xlBoldTextDecoration: "none",
+  TypographyText2xlBoldFontFamily: "Helvetica Neue",
+  TypographyText2xlBoldFontWeight: 700,
+  TypographyText2xlBoldFontStyle: "normal",
+  TypographyText2xlBoldFontStretch: "normal",
+  TypographyText2xlBoldLetterSpacing: 0,
+  TypographyText2xlBoldLineHeight: 36,
+  TypographyText2xlBoldParagraphIndent: 0,
+  TypographyText2xlBoldParagraphSpacing: 0,
+  TypographyText2xlBoldTextCase: "none",
+  TypographyText3xlThinFontSize: 30,
+  TypographyText3xlThinTextDecoration: "none",
+  TypographyText3xlThinFontFamily: "Helvetica Neue",
+  TypographyText3xlThinFontWeight: 100,
+  TypographyText3xlThinFontStyle: "normal",
+  TypographyText3xlThinFontStretch: "normal",
+  TypographyText3xlThinLetterSpacing: 0,
+  TypographyText3xlThinLineHeight: 45,
+  TypographyText3xlThinParagraphIndent: 0,
+  TypographyText3xlThinParagraphSpacing: 0,
+  TypographyText3xlThinTextCase: "none",
+  TypographyText3xlLightFontSize: 30,
+  TypographyText3xlLightTextDecoration: "none",
+  TypographyText3xlLightFontFamily: "Helvetica Neue",
+  TypographyText3xlLightFontWeight: 300,
+  TypographyText3xlLightFontStyle: "normal",
+  TypographyText3xlLightFontStretch: "normal",
+  TypographyText3xlLightLetterSpacing: 0,
+  TypographyText3xlLightLineHeight: 45,
+  TypographyText3xlLightParagraphIndent: 0,
+  TypographyText3xlLightParagraphSpacing: 0,
+  TypographyText3xlLightTextCase: "none",
+  TypographyText3xlRegularFontSize: 30,
+  TypographyText3xlRegularTextDecoration: "none",
+  TypographyText3xlRegularFontFamily: "Helvetica Neue",
+  TypographyText3xlRegularFontWeight: 400,
+  TypographyText3xlRegularFontStyle: "normal",
+  TypographyText3xlRegularFontStretch: "normal",
+  TypographyText3xlRegularLetterSpacing: 0,
+  TypographyText3xlRegularLineHeight: 45,
+  TypographyText3xlRegularParagraphIndent: 0,
+  TypographyText3xlRegularParagraphSpacing: 0,
+  TypographyText3xlRegularTextCase: "none",
+  TypographyText3xlMediumFontSize: 30,
+  TypographyText3xlMediumTextDecoration: "none",
+  TypographyText3xlMediumFontFamily: "Helvetica Neue",
+  TypographyText3xlMediumFontWeight: 500,
+  TypographyText3xlMediumFontStyle: "normal",
+  TypographyText3xlMediumFontStretch: "normal",
+  TypographyText3xlMediumLetterSpacing: 0,
+  TypographyText3xlMediumLineHeight: 45,
+  TypographyText3xlMediumParagraphIndent: 0,
+  TypographyText3xlMediumParagraphSpacing: 0,
+  TypographyText3xlMediumTextCase: "none",
+  TypographyText3xlBoldFontSize: 30,
+  TypographyText3xlBoldTextDecoration: "none",
+  TypographyText3xlBoldFontFamily: "Helvetica Neue",
+  TypographyText3xlBoldFontWeight: 700,
+  TypographyText3xlBoldFontStyle: "normal",
+  TypographyText3xlBoldFontStretch: "normal",
+  TypographyText3xlBoldLetterSpacing: 0,
+  TypographyText3xlBoldLineHeight: 45,
+  TypographyText3xlBoldParagraphIndent: 0,
+  TypographyText3xlBoldParagraphSpacing: 0,
+  TypographyText3xlBoldTextCase: "none",
+  TypographyText4xlThinFontSize: 36,
+  TypographyText4xlThinTextDecoration: "none",
+  TypographyText4xlThinFontFamily: "Helvetica Neue",
+  TypographyText4xlThinFontWeight: 100,
+  TypographyText4xlThinFontStyle: "normal",
+  TypographyText4xlThinFontStretch: "normal",
+  TypographyText4xlThinLetterSpacing: 0,
+  TypographyText4xlThinLineHeight: 54,
+  TypographyText4xlThinParagraphIndent: 0,
+  TypographyText4xlThinParagraphSpacing: 0,
+  TypographyText4xlThinTextCase: "none",
+  TypographyText4xlLightFontSize: 36,
+  TypographyText4xlLightTextDecoration: "none",
+  TypographyText4xlLightFontFamily: "Helvetica Neue",
+  TypographyText4xlLightFontWeight: 300,
+  TypographyText4xlLightFontStyle: "normal",
+  TypographyText4xlLightFontStretch: "normal",
+  TypographyText4xlLightLetterSpacing: 0,
+  TypographyText4xlLightLineHeight: 54,
+  TypographyText4xlLightParagraphIndent: 0,
+  TypographyText4xlLightParagraphSpacing: 0,
+  TypographyText4xlLightTextCase: "none",
+  TypographyText4xlRegularFontSize: 36,
+  TypographyText4xlRegularTextDecoration: "none",
+  TypographyText4xlRegularFontFamily: "Helvetica Neue",
+  TypographyText4xlRegularFontWeight: 400,
+  TypographyText4xlRegularFontStyle: "normal",
+  TypographyText4xlRegularFontStretch: "normal",
+  TypographyText4xlRegularLetterSpacing: 0,
+  TypographyText4xlRegularLineHeight: 54,
+  TypographyText4xlRegularParagraphIndent: 0,
+  TypographyText4xlRegularParagraphSpacing: 0,
+  TypographyText4xlRegularTextCase: "none",
+  TypographyText4xlMediumFontSize: 36,
+  TypographyText4xlMediumTextDecoration: "none",
+  TypographyText4xlMediumFontFamily: "Helvetica Neue",
+  TypographyText4xlMediumFontWeight: 500,
+  TypographyText4xlMediumFontStyle: "normal",
+  TypographyText4xlMediumFontStretch: "normal",
+  TypographyText4xlMediumLetterSpacing: 0,
+  TypographyText4xlMediumLineHeight: 54,
+  TypographyText4xlMediumParagraphIndent: 0,
+  TypographyText4xlMediumParagraphSpacing: 0,
+  TypographyText4xlMediumTextCase: "none",
+  TypographyText4xlBoldFontSize: 36,
+  TypographyText4xlBoldTextDecoration: "none",
+  TypographyText4xlBoldFontFamily: "Helvetica Neue",
+  TypographyText4xlBoldFontWeight: 700,
+  TypographyText4xlBoldFontStyle: "normal",
+  TypographyText4xlBoldFontStretch: "normal",
+  TypographyText4xlBoldLetterSpacing: 0,
+  TypographyText4xlBoldLineHeight: 54,
+  TypographyText4xlBoldParagraphIndent: 0,
+  TypographyText4xlBoldParagraphSpacing: 0,
+  TypographyText4xlBoldTextCase: "none",
+  TypographyText5xlThinFontSize: 48,
+  TypographyText5xlThinTextDecoration: "none",
+  TypographyText5xlThinFontFamily: "Helvetica Neue",
+  TypographyText5xlThinFontWeight: 100,
+  TypographyText5xlThinFontStyle: "normal",
+  TypographyText5xlThinFontStretch: "normal",
+  TypographyText5xlThinLetterSpacing: 0,
+  TypographyText5xlThinLineHeight: 72,
+  TypographyText5xlThinParagraphIndent: 0,
+  TypographyText5xlThinParagraphSpacing: 0,
+  TypographyText5xlThinTextCase: "none",
+  TypographyText5xlLightFontSize: 48,
+  TypographyText5xlLightTextDecoration: "none",
+  TypographyText5xlLightFontFamily: "Helvetica Neue",
+  TypographyText5xlLightFontWeight: 300,
+  TypographyText5xlLightFontStyle: "normal",
+  TypographyText5xlLightFontStretch: "normal",
+  TypographyText5xlLightLetterSpacing: 0,
+  TypographyText5xlLightLineHeight: 72,
+  TypographyText5xlLightParagraphIndent: 0,
+  TypographyText5xlLightParagraphSpacing: 0,
+  TypographyText5xlLightTextCase: "none",
+  TypographyText5xlRegularFontSize: 48,
+  TypographyText5xlRegularTextDecoration: "none",
+  TypographyText5xlRegularFontFamily: "Helvetica Neue",
+  TypographyText5xlRegularFontWeight: 400,
+  TypographyText5xlRegularFontStyle: "normal",
+  TypographyText5xlRegularFontStretch: "normal",
+  TypographyText5xlRegularLetterSpacing: 0,
+  TypographyText5xlRegularLineHeight: 72,
+  TypographyText5xlRegularParagraphIndent: 0,
+  TypographyText5xlRegularParagraphSpacing: 0,
+  TypographyText5xlRegularTextCase: "none",
+  TypographyText5xlMediumFontSize: 48,
+  TypographyText5xlMediumTextDecoration: "none",
+  TypographyText5xlMediumFontFamily: "Helvetica Neue",
+  TypographyText5xlMediumFontWeight: 500,
+  TypographyText5xlMediumFontStyle: "normal",
+  TypographyText5xlMediumFontStretch: "normal",
+  TypographyText5xlMediumLetterSpacing: 0,
+  TypographyText5xlMediumLineHeight: 72,
+  TypographyText5xlMediumParagraphIndent: 0,
+  TypographyText5xlMediumParagraphSpacing: 0,
+  TypographyText5xlMediumTextCase: "none",
+  TypographyText5xlBoldFontSize: 48,
+  TypographyText5xlBoldTextDecoration: "none",
+  TypographyText5xlBoldFontFamily: "Helvetica Neue",
+  TypographyText5xlBoldFontWeight: 700,
+  TypographyText5xlBoldFontStyle: "normal",
+  TypographyText5xlBoldFontStretch: "normal",
+  TypographyText5xlBoldLetterSpacing: 0,
+  TypographyText5xlBoldLineHeight: 72,
+  TypographyText5xlBoldParagraphIndent: 0,
+  TypographyText5xlBoldParagraphSpacing: 0,
+  TypographyText5xlBoldTextCase: "none",
+  TypographyText6xlThinFontSize: 64,
+  TypographyText6xlThinTextDecoration: "none",
+  TypographyText6xlThinFontFamily: "Helvetica Neue",
+  TypographyText6xlThinFontWeight: 100,
+  TypographyText6xlThinFontStyle: "normal",
+  TypographyText6xlThinFontStretch: "normal",
+  TypographyText6xlThinLetterSpacing: 0,
+  TypographyText6xlThinLineHeight: 96,
+  TypographyText6xlThinParagraphIndent: 0,
+  TypographyText6xlThinParagraphSpacing: 0,
+  TypographyText6xlThinTextCase: "none",
+  TypographyText6xlLightFontSize: 64,
+  TypographyText6xlLightTextDecoration: "none",
+  TypographyText6xlLightFontFamily: "Helvetica Neue",
+  TypographyText6xlLightFontWeight: 300,
+  TypographyText6xlLightFontStyle: "normal",
+  TypographyText6xlLightFontStretch: "normal",
+  TypographyText6xlLightLetterSpacing: 0,
+  TypographyText6xlLightLineHeight: 96,
+  TypographyText6xlLightParagraphIndent: 0,
+  TypographyText6xlLightParagraphSpacing: 0,
+  TypographyText6xlLightTextCase: "none",
+  TypographyText6xlRegularFontSize: 64,
+  TypographyText6xlRegularTextDecoration: "none",
+  TypographyText6xlRegularFontFamily: "Helvetica Neue",
+  TypographyText6xlRegularFontWeight: 400,
+  TypographyText6xlRegularFontStyle: "normal",
+  TypographyText6xlRegularFontStretch: "normal",
+  TypographyText6xlRegularLetterSpacing: 0,
+  TypographyText6xlRegularLineHeight: 96,
+  TypographyText6xlRegularParagraphIndent: 0,
+  TypographyText6xlRegularParagraphSpacing: 0,
+  TypographyText6xlRegularTextCase: "none",
+  TypographyText6xlMediumFontSize: 64,
+  TypographyText6xlMediumTextDecoration: "none",
+  TypographyText6xlMediumFontFamily: "Helvetica Neue",
+  TypographyText6xlMediumFontWeight: 500,
+  TypographyText6xlMediumFontStyle: "normal",
+  TypographyText6xlMediumFontStretch: "normal",
+  TypographyText6xlMediumLetterSpacing: 0,
+  TypographyText6xlMediumLineHeight: 96,
+  TypographyText6xlMediumParagraphIndent: 0,
+  TypographyText6xlMediumParagraphSpacing: 0,
+  TypographyText6xlMediumTextCase: "none",
+  TypographyText6xlBoldFontSize: 64,
+  TypographyText6xlBoldTextDecoration: "none",
+  TypographyText6xlBoldFontFamily: "Helvetica Neue",
+  TypographyText6xlBoldFontWeight: 700,
+  TypographyText6xlBoldFontStyle: "normal",
+  TypographyText6xlBoldFontStretch: "normal",
+  TypographyText6xlBoldLetterSpacing: 0,
+  TypographyText6xlBoldLineHeight: 96,
+  TypographyText6xlBoldParagraphIndent: 0,
+  TypographyText6xlBoldParagraphSpacing: 0,
+  TypographyText6xlBoldTextCase: "none",
+};
