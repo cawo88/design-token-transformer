@@ -1,4 +1,6 @@
 :root {
+  --color-black: #000000;
+  --color-white: #ffffff;
   --typography-text-6xl-regular-font-size: 64px;
   --typography-text-6xl-regular-text-decoration: none;
   --typography-text-6xl-regular-font-family: Helvetica Neue;

@@ -1,8 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Jan 2022 19:29:06 GMT
+ * Generated on Tue, 11 Jan 2022 20:01:13 GMT
  */
 
+export const ColorBlack = "#000000";
+export const ColorWhite = "#ffffff";
 export const FontText6xlRegular = {"fontSize":64,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":96,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontText5xlRegular = {"fontSize":48,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":72,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontText4xlRegular = {"fontSize":36,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":54,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
