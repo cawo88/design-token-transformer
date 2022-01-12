@@ -1,2 +1,9 @@
+# Dependencies
 node_modules/
+
+# Misc
 .DS_Store
+
+# Environments
+.env
+!.env.example
