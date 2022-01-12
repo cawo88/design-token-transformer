@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Tue, 11 Jan 2022 20:36:43 GMT
+ * Generated on Wed, 12 Jan 2022 10:43:26 GMT
  */
 
 export const ColorBlack : string;
