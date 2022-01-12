@@ -1,3 +1,15 @@
+# v0.6.9 (Wed Jan 12 2022)
+
+#### ⚠️ Pushed to `main`
+
+- chore: update node version in workflows ([@cawo88](https://github.com/cawo88))
+
+#### Authors: 1
+
+- Carol Leung ([@cawo88](https://github.com/cawo88))
+
+---
+
 # v0.6.8 (Wed Jan 12 2022)
 
 #### 🐛 Bug Fix
