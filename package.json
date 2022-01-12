@@ -20,7 +20,7 @@
     "start": "npm run transform-tokens",
     "transform-tokens": "node ./transformTokens.js",
     "test": "jest tests --coverage=false",
-    "release": "auto shipit --base-branch=main"
+    "release": "auto shipit --base-branch=main --name=cawo88"
   },
   "repository": {
     "type": "git",
