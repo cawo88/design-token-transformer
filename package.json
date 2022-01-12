@@ -3,6 +3,7 @@
   "version": "0.6.9",
   "description": "Base repo to transform json design tokens from the figma design token plugin via amazon style directory.",
   "author": "Lukas Oppermann",
+  "contributor": "Carol Leung",
   "license": "MIT",
   "main": "build/index.d.ts",
   "types": "build/index.d.ts",
