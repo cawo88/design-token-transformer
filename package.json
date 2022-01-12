@@ -18,7 +18,8 @@
   "scripts": {
     "start": "npm run transform-tokens",
     "transform-tokens": "node ./transformTokens.js",
-    "test": "jest tests --coverage=false"
+    "test": "jest tests --coverage=false",
+    "release": "auto shipit --base-branch=main"
   },
   "repository": {
     "type": "git",
