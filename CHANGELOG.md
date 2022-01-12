@@ -1,3 +1,24 @@
+# v0.6.8 (Wed Jan 12 2022)
+
+#### 🐛 Bug Fix
+
+- Design tokens updated [#11](https://github.com/cawo88/design-token-transformer/pull/11) ([@cawo88](https://github.com/cawo88) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### ⚠️ Pushed to `main`
+
+- chore: update action ([@cawo88](https://github.com/cawo88))
+- chore: update workflows ([@cawo88](https://github.com/cawo88))
+- chore: update workflow ([@cawo88](https://github.com/cawo88))
+- chore: replace npm with yarn in workflow ([@cawo88](https://github.com/cawo88))
+- feat: add releases github workflow ([@cawo88](https://github.com/cawo88))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Carol Leung ([@cawo88](https://github.com/cawo88))
+
+---
+
 # v0.6.7 (Wed Jan 12 2022)
 
 #### 🐛 Bug Fix
