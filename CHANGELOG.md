@@ -1,3 +1,16 @@
+# v0.6.10 (Wed Jan 12 2022)
+
+#### ⚠️ Pushed to `main`
+
+- chore: edit script ([@cawo88](https://github.com/cawo88))
+- doc: add contributor ([@cawo88](https://github.com/cawo88))
+
+#### Authors: 1
+
+- Carol Leung ([@cawo88](https://github.com/cawo88))
+
+---
+
 # v0.6.9 (Wed Jan 12 2022)
 
 #### ⚠️ Pushed to `main`
