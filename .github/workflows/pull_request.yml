@@ -3,7 +3,7 @@ name: Release
 
 # The event that will trigger the action
 on:
-  push:
+  pull_request:
     branches: [main]
 
 # what the action will do
