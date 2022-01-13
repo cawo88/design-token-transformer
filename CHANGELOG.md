@@ -1,3 +1,16 @@
+# v0.6.13 (Thu Jan 13 2022)
+
+#### 🐛 Bug Fix
+
+- Design tokens updated [#14](https://github.com/cawo88/design-token-transformer/pull/14) ([@cawo88](https://github.com/cawo88) [@github-actions[bot]](https://github.com/github-actions[bot]))
+
+#### Authors: 2
+
+- [@github-actions[bot]](https://github.com/github-actions[bot])
+- Carol Leung ([@cawo88](https://github.com/cawo88))
+
+---
+
 # v0.6.12 (Thu Jan 13 2022)
 
 #### 🐛 Bug Fix
