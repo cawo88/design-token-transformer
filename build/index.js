@@ -1,6 +1,6 @@
 /**
  * Do not edit directly
- * Generated on Wed, 12 Jan 2022 23:09:29 GMT
+ * Generated on Thu, 13 Jan 2022 10:43:47 GMT
  */
 
 export const ColorBlack = "#000000";
@@ -91,7 +91,7 @@ export const FontText3xlRegular = {"fontSize":30,"textDecoration":"none","fontFa
 export const FontText2xlRegular = {"fontSize":24,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":36,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontTextXlRegular = {"fontSize":20,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":30,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontTextLgRegular = {"fontSize":18,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":27,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
-export const FontTextBaseRegular = {"fontSize":16,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":24,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
+export const FontTextBaseRegular = {"fontSize":16,"textDecoration":"none","fontFamily":"Times New Roman","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":24,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontTextSmRegular = {"fontSize":14,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":21,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const FontTextXsRegular = {"fontSize":12,"textDecoration":"none","fontFamily":"Helvetica Neue","fontWeight":400,"fontStyle":"normal","fontStretch":"normal","letterSpacing":0,"lineHeight":18,"paragraphIndent":0,"paragraphSpacing":0,"textCase":"none"};
 export const TypographyText6xlRegularFontSize = 64;
@@ -173,7 +173,7 @@ export const TypographyTextLgRegularParagraphSpacing = 0;
 export const TypographyTextLgRegularTextCase = "none";
 export const TypographyTextBaseRegularFontSize = 16;
 export const TypographyTextBaseRegularTextDecoration = "none";
-export const TypographyTextBaseRegularFontFamily = "Helvetica Neue";
+export const TypographyTextBaseRegularFontFamily = "Times New Roman";
 export const TypographyTextBaseRegularFontWeight = 400;
 export const TypographyTextBaseRegularFontStyle = "normal";
 export const TypographyTextBaseRegularFontStretch = "normal";
