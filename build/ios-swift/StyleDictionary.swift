@@ -4,7 +4,7 @@
 //
 
 // Do not edit directly
-// Generated on Thu, 13 Jan 2022 10:43:47 GMT
+// Generated on Thu, 13 Jan 2022 11:25:22 GMT
 
 
 import UIKit
@@ -156,7 +156,7 @@ public class StyleDictionary {
     public static let typographyText6xlRegularParagraphSpacing = 0
     public static let typographyText6xlRegularTextCase = none
     public static let typographyText6xlRegularTextDecoration = none
-    public static let typographyTextBaseRegularFontFamily = Times New Roman
+    public static let typographyTextBaseRegularFontFamily = Helvetica Neue
     public static let typographyTextBaseRegularFontSize = 16
     public static let typographyTextBaseRegularFontStretch = normal
     public static let typographyTextBaseRegularFontStyle = normal
